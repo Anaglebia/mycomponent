@@ -16,6 +16,11 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-height: 100vh;
     line-height: 1.7rem;
+    background-image:url("assets/unsplash.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 h1{
     font-size: 4rem;
@@ -31,8 +36,7 @@ h2{
     margin-top: 1rem;
 }
 article{
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 1em 0;
 }
 section{
     margin-bottom: 3rem;
@@ -40,17 +44,19 @@ section{
 .heightligth{
     border-left: 1px solid var(--primary-color);
     font-size: 1.1rem;
-    padding-left: 2.2em;
+    padding: 0 0 0 2em;
     margin-bottom: 2.2em;
 }
 
 .main_header{
     flex: 0 0 26rem;
-    background-color: var(--secondary-color);
+    background-color: rgba(49, 51, 59, .8);
+
 }
 
 .main{
     background-color: var(--secondary-color-ligth);
+    background-color: rgba(68,72, 86, .6);
     flex: 1 0;
     padding: 6.5rem 6rem 7.5rem;
 }
@@ -71,6 +77,9 @@ a{
 .main-nav{
     text-align: right;
     padding: 6.5rem 2.4rem 2.4rem;
+    position: static;
+    top: 0;
+    left: 0;
 }
 .main-nav ul{
     padding: 0;
@@ -94,7 +103,7 @@ a{
 
 .main-nav li{
     border-bottom: 1px solid #7b7b7b;
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 kbd {
     background-color: #eee;
@@ -133,5 +142,71 @@ kbd {
     display: flex;
     gap: 1.5em;
     padding-top: 1.5rem;
-    /* padding: 2.5rem 0; */
+   justify-content: space-between;
   }
+
+  .row >*{
+    /* flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0%; */
+    flex: 1 0 0%;
+  }
+  .alternada{
+    list-style-type: none;
+    padding-left: 0px
+  }
+
+  .alternada li:not(:last-child){
+    border-bottom:2px solid;
+    padding: 0;
+  }
+  /* .alternada li:last-child{
+    border-bottom: none;
+  } */
+  .list-emoji{
+    list-style-type: "\1f642";
+  }
+
+  .table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+  }
+
+  .table td:last-child, .table th:last-child{
+    text-align: right;
+  }
+  .table td, .table th{
+    padding: 1.6rem;
+  }
+  .table:not(.table-alternate) td{
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  .table th{
+    text-transform: uppercase;
+    text-align: left;
+  }
+  .table-alternate tbody tr:nth-child(odd){
+    background-color: #313338;
+  }
+  .table-verticalLines td:not(:last-child),
+  .table-verticalLines th:not(:last-child){
+    border-right: 1px solid var(--secondary-color);
+  }
+  svg{
+    transition: color .3s;
+  }
+    svg:hover{
+        color: var(--primary-color);
+    }
+  .icon p a{
+    text-decoration: none;
+}
+ 
+  .icon{
+    display: flex;
+    vertical-align: middle;
+    padding: 2rem;
+    margin-right: 1rem;
+    gap: 2rem;
+    }
