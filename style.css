@@ -31,8 +31,17 @@ h2{
     margin-top: 1rem;
 }
 article{
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+section{
+    margin-bottom: 3rem;
+}
+.heightligth{
+    border-left: 1px solid var(--primary-color);
+    font-size: 1.1rem;
+    padding-left: 2.2em;
+    margin-bottom: 2.2em;
 }
 
 .main_header{
@@ -76,7 +85,8 @@ a{
     background-color: transparent;
 }
 
-.main-nav ul a:hover{
+.main-nav ul a:hover,
+.main-nav ul a:focus{
     background-color: var(--secondary-color-ligth);
     padding-right: 1rem;
     
@@ -86,3 +96,42 @@ a{
     border-bottom: 1px solid #7b7b7b;
     padding: 4rem 0;
 }
+kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.2),
+      0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: 0.85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+  }
+  .card{
+    max-width: 370px;
+    background-color: var(--secondary-color);
+    padding: 0;
+  }
+  .card-content{
+    padding: 0.5em 1em 1em;
+  }
+  .card-content p, .card-title{
+    margin: 0;
+  }
+ .card-title{
+    font-size: 1.75em;
+    margin-bottom: .5em;
+  }
+  .card img{
+    max-width: 100%;
+  }
+  .row{
+    display: flex;
+    gap: 1.5em;
+    padding-top: 1.5rem;
+    /* padding: 2.5rem 0; */
+  }
